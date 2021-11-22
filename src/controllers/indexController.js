@@ -2,7 +2,7 @@ let db = require('../database');
 
 let controller = {
     index: (req, res) => {
-        //res.send('Hola mundo desde el controlador')
+        //res.send('Hola mundo desde el controlador')                                                                                                                                                                                                                                                                                                           
         res.set({'content-type':'text/plain;charset=utf-8'})
         res.write(`
         *****************************
