@@ -2,8 +2,9 @@ let express = require('express');
 let router = express.Router();
 let controller = require('../controllers/marcasController');
 
-router.get('/', controller.index);
+// Ruta
+router.get('/', controller.getMark);
 //Ruta parametrizada
-router.get('/:marca', controller.marca);
+router.get('/:marca', controller.getOneMark);
 
 module.exports = router
